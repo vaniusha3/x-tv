@@ -412,13 +412,13 @@ echo -e "${jeshile} └───────────────────
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+] upgrade panel for fix stb mag device working          │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaa
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xab
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xac
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xad
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xae
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaf
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xag
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xaa
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xab
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xac
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xad
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xae
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xaf
+wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xag
 cat xaa xab xac xad xae xaf xag > xtreamcodeiptvupdatenew.tar.bz2
 rm -f xaa xab xac xad xae xaf xag 
 killall nginx
