@@ -410,17 +410,17 @@ echo -e "${jeshile} ┌───────────────────
 echo -e "${jeshile} │  Xtream Fuckers 10.60 Nulled By Albanian Crackers (TRC4) │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │[+] install plowshare and upgrade                                │ \e[0m"
+echo -e "${jeshile} │[+] upgrade panel for fix stb mag device working          │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
-apt-get -y install git build-essential curl
-git clone https://github.com/mcrapet/plowshare.git
-cd plowshare
-make install PREFIX=/usr
-cd ..
-rm -rf plowshare
-plowmod --install
-plowmod --update
-plowdown http://uptobox.com/kljhz7c1elb9
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaa
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xab
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xac
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xad
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xae
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaf
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xag
+cat xaa xab xac xad xae xaf xag > xtreamcodeiptvupdatenew.tar.bz2
+rm -f xaa xab xac xad xae xaf xag 
 killall nginx
 killall php-fpm
 tar -xvf xtreamcodeiptvupdatenew.tar.bz2 -C /home/xtreamcodes/iptv_xtream_codes
