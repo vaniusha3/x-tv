@@ -6,3 +6,5 @@
 #### [2] Licences: 'bubi1'
 
 #### [3] default access http://ip:8888/ username root password 1234 recommend change password after install
+
+#### [4] this update working stb mag
