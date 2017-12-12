@@ -425,7 +425,7 @@ killall nginx
 killall php-fpm
 tar -xvf xtreamcodeiptvupdatenew.tar.bz2 -C /home/xtreamcodes/iptv_xtream_codes
 read -s -p "Re-Type MySQL root Password: " mysqlpassword
-mysql -h localhost -u user -p$mysqlpassword < /home/xtreamcodes/iptv_xtream_codes/xtream_iptvpro.sql
+mysql -h localhost -u root -p$mysqlpassword < /home/xtreamcodes/iptv_xtream_codes/xtream_iptvpro.sql
 /home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx
 /home/xtreamcodes/iptv_xtream_codes/php/sbin/php-fpm
 rm -f xtreamcodeiptvupdatenew.tar.bz2
