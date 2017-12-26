@@ -368,9 +368,10 @@ rm /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
 cp /var/www/html/downloads/iptv_panel_pro.zip /tmp
 chmod a+x /tmp/iptv_panel_pro.zip
 #cp /var/www/html/downloads/install_iptv_pro.php /root/ #FSHIHET AUTOMATIKISHT MBAS INSTALIMIT
-#cd /root
+cd /tmp
+unzip iptv_panel_pro.zip
 #chmod a+x /root/install_iptv_pro.php
-#php install_iptv_pro.php  #KJO ESHTE LULKUQJA
+php install_iptv_pro.php  #KJO ESHTE LULKUQJA
 echo " "
 #REPLACE CONFIG, ALL ORIGINAL FILES ARE BACKUP WITH END backup_by_TRC4
 echo -e "${jeshile} ┌─────────────────────────────────────────┐ \e[0m"
@@ -412,12 +413,12 @@ echo -e "${jeshile} └───────────────────
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+] upgrade panel for fix stb mag device working          │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xaa
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xab
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xac
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xad
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xae
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xaf
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaa
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xab
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xac
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xad
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xae
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaf
 wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xag
 cat xaa xab xac xad xae xaf xag > xtreamcodeiptvupdatenew.tar.bz2
 rm -f xaa xab xac xad xae xaf xag 
@@ -429,6 +430,7 @@ mysql -h localhost -u root -p$mysqlpassword < /home/xtreamcodes/iptv_xtream_code
 /home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx
 /home/xtreamcodes/iptv_xtream_codes/php/sbin/php-fpm
 rm -f xtreamcodeiptvupdatenew.tar.bz2
+rm -f /home/xtreamcodes/iptv_xtream_codes/xtream_iptvpro.sql
 rm /root/xtreamcodes_1.0.60_Nulled.sh
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
