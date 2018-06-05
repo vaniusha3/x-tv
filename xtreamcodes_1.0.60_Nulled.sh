@@ -419,7 +419,7 @@ wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xac
 wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xad
 wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xae
 wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaf
-wget https://raw.githubusercontent.com/vaniusha3/x-tv/master/xag
+wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xag
 cat xaa xab xac xad xae xaf xag > xtreamcodeiptvupdatenew.tar.bz2
 rm -f xaa xab xac xad xae xaf xag 
 killall nginx
