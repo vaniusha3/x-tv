@@ -362,16 +362,19 @@ echo -e "${jeshile} └───────────────────
 echo " "
 #mkdir /var/www/html
 #cd /var/www/html #DESTINACIONI KRYESOR ADMIN - TEMPLATES ETC
-cd /var/www/html && wget http://downloads.sourceforge.net/project/iptv-md/xtream/Xtream_Codes_v1.0.60_Nulled.zip && unzip Xtream_Codes_v1.0.60_Nulled.zip && cp /var/www/html/downloads/iptv_panel_pro.zip /tmp && chmod a+x /tmp/iptv_panel_pro.zip && cp /var/www/html/downloads/install_iptv_pro.php /root/ && cd /root && chmod a+x /root/install_iptv_pro.php && php install_iptv_pro.php
-chmod 775 /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
-rm /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+cd /var/www/html
+wget http://downloads.sourceforge.net/project/andykimpe-xtv/Xtream_Codes_v1.0.60_Nulled.zip
+unzip Xtream_Codes_v1.0.60_Nulled.zip
 cp /var/www/html/downloads/iptv_panel_pro.zip /tmp
 chmod a+x /tmp/iptv_panel_pro.zip
-#cp /var/www/html/downloads/install_iptv_pro.php /root/ #FSHIHET AUTOMATIKISHT MBAS INSTALIMIT
-cd /tmp
-unzip iptv_panel_pro.zip
-#chmod a+x /root/install_iptv_pro.php
-php install_iptv_pro.php  #KJO ESHTE LULKUQJA
+cp /var/www/html/downloads/install_iptv_pro.php /root/
+cd /root
+chmod 775 /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+rm /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+chattr +i /tmp/iptv_panel_pro.zip
+php /var/www/html/downloads/install_iptv_pro.php
+chattr -i /tmp/iptv_panel_pro.zip
+rm -f /tmp/iptv_panel_pro.zip
 echo " "
 #REPLACE CONFIG, ALL ORIGINAL FILES ARE BACKUP WITH END backup_by_TRC4
 echo -e "${jeshile} ┌─────────────────────────────────────────┐ \e[0m"
@@ -406,31 +409,6 @@ echo -e "${jeshile} │  Removing TEMP Files  │ \e[0m"
 echo -e "${jeshile} └───────────────────────┘ \e[0m"
 echo " "
 rm /root/install_iptv_pro.php
-echo " "
-echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │  Xtream Fuckers 10.60 Nulled By Albanian Crackers (TRC4) │ \e[0m"
-echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
-echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
-echo -e "${jeshile} │[+] upgrade panel for fix stb mag device working          │ \e[0m"
-echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaa
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xab
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xac
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xad
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xae
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xaf
-wget https://raw.githubusercontent.com/andykimpe/x-tv/master/xag
-cat xaa xab xac xad xae xaf xag > xtreamcodeiptvupdatenew.tar.bz2
-rm -f xaa xab xac xad xae xaf xag 
-killall nginx
-killall php-fpm
-tar -xvf xtreamcodeiptvupdatenew.tar.bz2 -C /home/xtreamcodes/iptv_xtream_codes
-read -s -p "Re-Type MySQL root Password: " mysqlpassword
-mysql -h localhost -u root -p$mysqlpassword < /home/xtreamcodes/iptv_xtream_codes/xtream_iptvpro.sql
-/home/xtreamcodes/iptv_xtream_codes/nginx/sbin/nginx
-/home/xtreamcodes/iptv_xtream_codes/php/sbin/php-fpm
-rm -f xtreamcodeiptvupdatenew.tar.bz2
-rm -f /home/xtreamcodes/iptv_xtream_codes/xtream_iptvpro.sql
 rm /root/xtreamcodes_1.0.60_Nulled.sh
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
