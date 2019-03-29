@@ -46,6 +46,8 @@ echo -e "${jeshile} ┌───────────────────
 echo -e "${jeshile} │    Blocking IP FORWARD Tables   │ \e[0m"
 echo -e "${jeshile} └─────────────────────────────────┘ \e[0m"
 echo " "
+/sbin/iptables -t nat -I OUTPUT --dest 123.103.255.80/28 -j DNAT --to-destination 127.0.0.1
+/sbin/iptables -t nat -I OUTPUT --dest 185.73.239.0/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest 149.202.206.51/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest 62.210.244.112/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest xtream-codes.com/28 -j DNAT --to-destination 127.0.0.1
