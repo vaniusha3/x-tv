@@ -21,6 +21,15 @@ echo -e "${jeshile} └───────────────────
 echo " "
 apt-get -y purge iptables-persistent
 rm -f /etc/iptables/rules.v4 /etc/iptables/rules.v6
+iptables -F
+iptables -X
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
 echo -e "${jeshile} ┌────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │   Enable IP Forwarding Tables  │ \e[0m"
 echo -e "${jeshile} └────────────────────────────────┘ \e[0m"
