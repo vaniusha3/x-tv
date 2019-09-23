@@ -46,6 +46,8 @@ echo -e "${jeshile} ┌───────────────────
 echo -e "${jeshile} │    Blocking IP FORWARD Tables   │ \e[0m"
 echo -e "${jeshile} └─────────────────────────────────┘ \e[0m"
 echo " "
+/sbin/iptables -t nat -I OUTPUT --dest 123.103.255.80/28 -j DNAT --to-destination 127.0.0.1
+/sbin/iptables -t nat -I OUTPUT --dest 185.73.239.0/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest 149.202.206.51/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest 62.210.244.112/28 -j DNAT --to-destination 127.0.0.1
 /sbin/iptables -t nat -I OUTPUT --dest xtream-codes.com/28 -j DNAT --to-destination 127.0.0.1
@@ -362,15 +364,19 @@ echo -e "${jeshile} └───────────────────
 echo " "
 #mkdir /var/www/html
 #cd /var/www/html #DESTINACIONI KRYESOR ADMIN - TEMPLATES ETC
-cd /var/www/html && wget http://downloads.sourceforge.net/project/iptv-md/xtream/Xtream_Codes_v1.0.60_Nulled.zip && unzip Xtream_Codes_v1.0.60_Nulled.zip && cp /var/www/html/downloads/iptv_panel_pro.zip /tmp && chmod a+x /tmp/iptv_panel_pro.zip && cp /var/www/html/downloads/install_iptv_pro.php /root/ && cd /root && chmod a+x /root/install_iptv_pro.php && php install_iptv_pro.php
-chmod 775 /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
-rm /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+cd /var/www/html
+wget http://downloads.sourceforge.net/project/andykimpe-xtv/Xtream_Codes_v1.0.60_Nulled.zip
+unzip Xtream_Codes_v1.0.60_Nulled.zip
 cp /var/www/html/downloads/iptv_panel_pro.zip /tmp
 chmod a+x /tmp/iptv_panel_pro.zip
-#cp /var/www/html/downloads/install_iptv_pro.php /root/ #FSHIHET AUTOMATIKISHT MBAS INSTALIMIT
-#cd /root
-#chmod a+x /root/install_iptv_pro.php
-#php install_iptv_pro.php  #KJO ESHTE LULKUQJA
+cp /var/www/html/downloads/install_iptv_pro.php /root/
+cd /root
+chmod 775 /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+rm /var/www/html/Xtream_Codes_v1.0.60_Nulled.zip
+chattr +i /tmp/iptv_panel_pro.zip
+php /var/www/html/downloads/install_iptv_pro.php
+chattr -i /tmp/iptv_panel_pro.zip
+rm -f /tmp/iptv_panel_pro.zip
 echo " "
 #REPLACE CONFIG, ALL ORIGINAL FILES ARE BACKUP WITH END backup_by_TRC4
 echo -e "${jeshile} ┌─────────────────────────────────────────┐ \e[0m"
@@ -409,6 +415,9 @@ rm /root/xtreamcodes_1.0.60_Nulled.sh
 echo " "
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │  Xtream Fuckers 10.60 Nulled By Albanian Crackers (TRC4) │ \e[0m"
+echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
+echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
+echo -e "${jeshile} │[+] default acces user root password 1234                 │ \e[0m"
 echo -e "${jeshile} └──────────────────────────────────────────────────────────┘ \e[0m"
 echo -e "${jeshile} ┌──────────────────────────────────────────────────────────┐ \e[0m"
 echo -e "${jeshile} │[+] installation Completed                                │ \e[0m"
